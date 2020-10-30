@@ -1,0 +1,25 @@
+name: ReportSQL
+version: 1.0.00-Beta
+description: Entasia's report plugin (By LokiTheKiller).
+api-version: '1.15'
+author: LokiTheKiler
+main: fr.entasia.reportsql.core.RSQLCore
+depend: [Libraries]
+commands:
+  report:
+    description: Ouvre le menu de signalement d'un joueur (/report <Nom du joueur>).
+  reporthelp:
+    description: Affiche les commandes du plugin a disposition (/reporthelp).
+    aliases: [rhelp]
+  reportlist:
+    description: Ouvre un menu contenant la liste des signalements enregistr�s (/reportlist).
+    permission: mod.report.list
+    aliases: [rlist]
+  reportsearch:
+    description: Fait une recherche des signalements selon les filtres donn�s en argument et ouvre le menu contenant les signalements correspondants aux crit�res (/reportsearch <filtres...>).
+    permission: mod.report.search
+    aliases: [rsearch]
+  reportfilters:
+    description: Commande pour voir les filtres a disposition pour les recherches pr�cises (/reportfilters).
+    permission: mod.report.filters
+    aliases: [rfilters]
